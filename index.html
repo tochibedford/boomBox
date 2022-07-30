@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>In a bid to learn the WEB AUDIO API</title>
+</head>
+<body>
+    <div class="boombox">
+        <div class="handleContainer">
+            <div class="handleBar componentBorder"></div>
+            <div class="handleSupports">
+                <div class="lightComponentBorder"></div>
+                <div class="lightComponentBorder"></div>
+            </div>
+        </div>
+        <div class="boxBody componentBorder">
+            <div class="controls">
+                <div class="sliders">
+                    <input class="sliderControl volumeControl" value="70" type="range" name="volume" min="0" max="100">
+                    <input class="sliderControl panControl" type="range" name="pan" min="-100" max="100">
+                </div>
+                <div class="switchButton">
+                    <img class="switchButtonImage"src="./svgs/switchButton.svg" alt="switch Button">
+                </div>
+            </div>
+            <div class="cassetteSpeakers">
+                <div class="speakerContainer componentBorder">
+                    <div class="speakerSurface componentBorder rythm-medium">
+                        <div class="speakerSurface lightComponentBorder">
+                            <div class="smallSpeakerSurface componentBorder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cassettePlayer componentBorder">
+                    <div class="cassetteViewer componentBorder">
+                        <div class="cassetteHole"></div>
+                        <div class="cassetteHole"></div>
+                    </div>
+                    <div class="playPauseButton">
+                        <img class="playButtonImage"src="./svgs/playButton.svg" alt="play Button">
+                        <img hidden class="pauseButtonImage"src="./svgs/pauseButton.svg" alt="pause Button">
+                    </div>
+                </div>
+                <div class="speakerContainer componentBorder">
+                    <div class="speakerSurface componentBorder rythm-high">
+                        <div class="speakerSurface lightComponentBorder">
+                            <div class="smallSpeakerSurface componentBorder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="./audio/89.wav"></audio>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rythm.js/2.2.5/rythm.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
