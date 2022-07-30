@@ -47,6 +47,10 @@ panControl.addEventListener('input', function(){
 
 audioElement.addEventListener('ended', ()=>{
     playPauseButton.isPlaying = false;
+    cassetteHoles.forEach(cassetteHole=>{
+        cassetteHole.classList.remove('spinningAnimation');
+        cassetteHole.classList.add('stoppingAnim');
+    });
 }, false);
 
 // default settings
